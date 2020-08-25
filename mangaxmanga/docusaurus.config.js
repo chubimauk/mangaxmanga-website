@@ -3,7 +3,7 @@ module.exports = {
   tagline: 'A Manga Reader App for iOS Devices (11.0+) and MacOS (Catalina+).', //secondary title in hero banner
   url: 'https://mangaxmanga.com',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   favicon: 'img/favicon.ico',
   organizationName: 'mangaxmanga', // Usually your GitHub org/user name.
   projectName: 'mangaxmanga', // Usually your repo name.
@@ -101,7 +101,7 @@ module.exports = {
           items: [
             {
               label: 'Privacy Policy',
-              to: '/static/privacy_policy.html',
+              to: 'https://docs.google.com/document/d/1Rh8fTTV3hmoCdknJEChWCP_1jtVCDFWWgzVxXEqgkh8/edit?usp=sharing',
             }/*,
             {
               label: 'GitHub',

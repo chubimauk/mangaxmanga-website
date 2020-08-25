@@ -21,12 +21,13 @@ module.exports = {
           label: 'Docs',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
-        {
+        {to: 'docs/roadmap/', label: 'Roadmap', position: 'left'},
+        /*{to: 'blog', label: 'Blog', position: 'left'},*/
+        /*{
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
           position: 'right',
-        },
+        },*/
         {
           label: 'Links',
           position: 'left', // or 'right'
@@ -81,8 +82,8 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
+              label: 'Privacy Policy',
+              to: '/static/privacy_policy.html',
             },
             {
               label: 'GitHub',

@@ -8,18 +8,6 @@ import styles from './styles.module.css';
 
 import useThemeContext from '@theme/hooks/useThemeContext';
 
-const mangaxmangafeatures = [
-  {
-    title: <>Manga x Manga</>,
-    imageUrl: 'img/logo.svg',
-    imageDarkUrl: 'img/logo.svg',
-    description: (
-      <>
-        A Manga Reader App for iOS Devices (11.0+) and MacOS (Catalina+).
-      </>
-    ),
-  }
-]
 const features = [
   {
     title: <>Library Tracking</>,
@@ -109,21 +97,6 @@ function Feature({imageUrl, imageDarkUrl, title, description}) {
   );
 }
 
-function MangaFeature({imageUrl, title, description}) {
-  const imgUrl = useBaseUrl(imageUrl);
-  return (
-    <div className={clsx('col col--4', styles.feature)}>
-      {imgUrl && (
-        <div className="text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
-        </div>
-      )}
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </div>
-  );
-}
-
 function Home() {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
@@ -142,10 +115,27 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
+              to={'http://patreon.com/'}>
+              Patreon Test Flight
+            </Link>
+            <Link
+              className={clsx(
+                'button button--outline button--secondary button--lg',
+                styles.getStarted,
+              )}
               to={useBaseUrl('docs/')}>
-              Get Started
+              iOS App Store
+            </Link>
+            <Link
+              className={clsx(
+                'button button--outline button--secondary button--lg',
+                styles.getStarted,
+              )}
+              to={useBaseUrl('docs/')}>
+              MacOS App Store
             </Link>
           </div>
+          
         </div>
       </header>
       <main>
@@ -165,40 +155,6 @@ function Home() {
             <div className="container">
               <div className="row">
                 {features2.map((props, idx) => (
-                  <Feature key={idx} {...props} />
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
-        {mangaxmangafeatures && mangaxmangafeatures.length > 0 && (
-          <section className={styles.features}>
-            <div className="container">
-              <div className="row">
-                {mangaxmangafeatures.map((props, idx) => (
-                  <Feature key={idx} {...props} />
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
-        <section className={styles.features}>
-          <div className="container">
-            <div className="row">
-            <Feature
-              title={<>Manga x Manga</>}
-              imageUrl="img/logo.svg"
-              imageDarkUrl="img/logo.svg"
-              description={<>A Manga Reader App for iOS and MacOS.</>}
-            />
-            </div>
-          </div>
-        </section>
-        {mangaxmangafeatures && mangaxmangafeatures.length > 0 && (
-          <section className={styles.features}>
-            <div className="container">
-              <div className="column">
-                {mangaxmangafeatures.map((props, idx) => (
                   <Feature key={idx} {...props} />
                 ))}
               </div>

@@ -1,7 +1,7 @@
 module.exports = {
   title: 'Manga x Manga', //title in hero banner
   tagline: 'A Manga Reader App for iOS Devices (11.0+) and MacOS (Catalina+).', //secondary title in hero banner
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://mangaxmanga.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
@@ -15,13 +15,18 @@ module.exports = {
         src: 'img/logo.svg',
       },
       items: [
-        {
+        /*{
           to: 'docs/',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',
+        },*/
+        {
+          href: 'https://www.patreon.com/mangaxmanga',
+          label: 'Patreon',
+          position: 'right'
         },
-        {to: 'docs/roadmap/', label: 'Roadmap', position: 'left'},
+        {to: 'docs/roadmap/', label: 'Roadmap', position: 'right'},
         /*{to: 'blog', label: 'Blog', position: 'left'},*/
         /*{
           href: 'https://github.com/facebook/docusaurus',
@@ -30,16 +35,20 @@ module.exports = {
         },*/
         {
           label: 'Links',
-          position: 'left', // or 'right'
+          position: 'right', // or 'right'
           items: [
+            {
+              label: 'Discord',
+              href: 'https://discord.com/channels/725782618968293447/725782619433861152',
+            },
             {
               label: 'Reddit',
               href: 'https://www.reddit.com/r/mangaxmanga/',
             },
             {
-              label: 'Discord',
-              href: 'https://discord.com/channels/725782618968293447/725782619433861152',
-            },
+              label: 'Twitter',
+              href: 'https://twitter.com/mangaxmanga1',
+            }
             // ... more items
           ],
         },
@@ -48,7 +57,7 @@ module.exports = {
     footer: {
       style: 'dark',
       links: [
-        {
+        /*{
           title: 'Docs',
           items: [
             {
@@ -60,21 +69,30 @@ module.exports = {
               to: 'docs/doc2/',
             },
           ],
+        },*/
+        {
+          title: 'Support',
+          items: [
+            {
+              label: 'Patreon',
+              href: 'https://www.patreon.com/mangaxmanga'
+            }
+          ]
         },
         {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Discord',
+              href: 'https://discord.com/channels/725782618968293447/725782619433861152',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Reddit',
+              href: 'https://www.reddit.com/r/mangaxmanga/',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/mangaxmanga1',
             },
           ],
         },
@@ -84,11 +102,11 @@ module.exports = {
             {
               label: 'Privacy Policy',
               to: '/static/privacy_policy.html',
-            },
+            }/*,
             {
               label: 'GitHub',
               href: 'https://github.com/facebook/docusaurus',
-            },
+            },*/
           ],
         },
       ],

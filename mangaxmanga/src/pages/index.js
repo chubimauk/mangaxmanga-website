@@ -115,7 +115,7 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={'http://patreon.com/'}>
+              to={'https://www.patreon.com/mangaxmanga'}>
               Patreon Test Flight
             </Link>
             <Link
@@ -123,7 +123,7 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/')}>
+              to={'PendingReview' /*useBaseUrl('docs/')*/}>
               iOS App Store
             </Link>
             <Link
@@ -131,8 +131,8 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/')}>
-              MacOS App Store
+              href={'https://github.com/chubimauk/MangaxMangaMacOSInstall/releases/download/v.1.10/mangaxmanga.dmg'}>
+              MacOS Install
             </Link>
           </div>
           

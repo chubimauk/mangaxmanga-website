@@ -4,14 +4,6 @@ title: Feature Roadmap
 sidebar_label: Roadmap
 ---
 
-### Planned Features
-
-:::important In Development
-
-Major features being developed
-
-:::
-
 export const Highlight = ({children, color}) => (
   <span
     style={{
@@ -24,4 +16,38 @@ export const Highlight = ({children, color}) => (
   </span>
 );
 
-<Highlight color="#25c2a0">Docusaurus green</Highlight> and <Highlight color="#1877F2">Facebook blue</Highlight> are my favorite colors.
+### Planned Features
+
+:::tip Partially Functional
+
+These are working but not fully fleshed out
+
+:::
+
++ <Highlight color="#4A23C9">Cross Site Series Mapping</Highlight>
+
+
+:::important In Development
+
+Major features being developed
+
+:::
+
++ Dynamic Recommendations
++ Smart Recommendations
+
+:::caution Not Yet Started
+
+Researched but not in development yet
+
+:::
+
++ Backup/Restore
++ Sync between iOS and MacOS
++ Better support for landscape device orientation
++ Ability to clear cache
+
+    + Currently Chapter listing pages are cached so that on repeat viewing they load quicker, this could potentially end up storing a lot eventually without clearing out the cache. (You can still pull down to refresh the chapter listing page to overwrite the cached results anytime you want)
+
+
+

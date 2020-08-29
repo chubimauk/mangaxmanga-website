@@ -123,7 +123,7 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={'PendingReview' /*useBaseUrl('docs/')*/}>
+              to={'https://apps.apple.com/us/app/manga-x-manga/id1508425099' /*useBaseUrl('docs/')*/}>
               iOS App Store
             </Link>
             <Link

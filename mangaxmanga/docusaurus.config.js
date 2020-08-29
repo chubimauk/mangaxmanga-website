@@ -39,7 +39,7 @@ module.exports = {
           items: [
             {
               label: 'Discord',
-              href: 'https://discord.gg/MvEKNgw',
+              href: 'https://discord.gg/x8PhyEz',
             },
             {
               label: 'Reddit',
@@ -84,7 +84,7 @@ module.exports = {
           items: [
             {
               label: 'Discord',
-              href: 'https://discord.gg/MvEKNgw',
+              href: 'https://discord.gg/x8PhyEz',
             },
             {
               label: 'Reddit',

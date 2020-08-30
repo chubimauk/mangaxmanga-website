@@ -102,8 +102,8 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`${siteConfig.title}`}
+      description="Manga Reader for iOS and MacOS<head />">
       <header className={clsx('', styles.heroBanner)}> {/*hero hero--primary --use this for class to use ifm colors from custom.css*/}
         <div className="container">
           <img className={styles.headerImage} src="/img/logo.svg" alt="AltTitle" />
@@ -131,7 +131,7 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              href={'https://github.com/chubimauk/MangaxMangaMacOSInstall/releases/download/v.1.10/mangaxmanga.dmg'}>
+              href={'https://github.com/chubimauk/MangaxMangaMacOSInstall/releases/download/v.1.121.1.3/mangaxmanga.dmg'}>
               MacOS Install
             </Link>
           </div>

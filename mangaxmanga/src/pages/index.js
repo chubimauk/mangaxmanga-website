@@ -10,12 +10,12 @@ import useThemeContext from '@theme/hooks/useThemeContext';
 
 const features = [
   {
-    title: <>Library Tracking</>,
+    title: <>Library Tracking/Following</>,
     imageUrl: 'img/tracking_01_light_rp.png'/*'img/undraw_docusaurus_mountain.svg'*/,
     imageDarkUrl: 'img/tracking_01_dark_rp.png',
     description: (
       <>
-        Automatically track your reading progress in your library,
+        Follow series and track your reading progress in your library,
          search, and sort within it. View your library in list or a resizable grid view.
       </>
     ),
@@ -131,7 +131,7 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              href={'https://github.com/chubimauk/MangaxMangaMacOSInstall/releases/download/v.1.121.1.3/mangaxmanga.dmg'}>
+              href={'https://github.com/chubimauk/MangaxMangaMacOSInstall/releases'}>
               MacOS Install
             </Link>
           </div>
